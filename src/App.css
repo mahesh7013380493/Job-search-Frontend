@@ -1,0 +1,96 @@
+#root {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Line clamp for job descriptions */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3; /* Added standard property for compatibility */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Neon button styles */
+button {
+  background-color: #1e1e1e;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #00ffcc;
+  color: #121212;
+}
+
+/* Neon hover effects */
+.hover\:neon:hover {
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+/* Custom transitions */
+.transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Focus styles */
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+/* Enhanced Professional Styling */
+body {
+  background-color: #f9fafb;
+  font-family: 'Roboto', sans-serif;
+}
+input, button {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+button {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #0284c7;
+}
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
