@@ -4,7 +4,8 @@ import NotFound from "./NotFound"; // Assuming you have a simple Not Found compo
 
 const PAGE_SIZE = 10;
 // The URL of the Flask API server we built
-const API_URL = "http://127.0.0.1:5001/api/jobs";
+// const API_URL = "http://127.0.0.1:5001/api/jobs";
+const API_URL = "https://job-search-web-scraping.onrender.com/api/jobs";
 
 export default function VendorsTab({ q, location, onApply }) {
   // State for all jobs fetched from the API
